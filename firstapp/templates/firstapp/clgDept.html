@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Departments</title>
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+</head>
+<body>
+    <h1>College Departments</h1>
+    <p>Welcome to the College Departments page!</p>
+    <header>
+        <h1>Computer Science Departments</h1>
+        <p>Computer science departments offer a wide range of programs and research opportunities.</p>
+    </header>
+    <section class="department">
+        <img src="{% static 'images/images7.jpeg' %}" alt="Computer Science Department">
+        <div class="content">
+            <h2>Department of Artificial Intelligence</h2>
+            <p>The Department of Artificial Intelligence focuses on cutting-edge research in machine learning, natural language processing, and robotics.</p>
+            <div id="more-info">
+                <p>Our faculty members are leading experts in their fields, and our students have access to state-of-the-art labs and resources.</p>
+            </div>
+            <button onclick="toggleInfo()" id="readMoreBtn">Read More</button>
+        </div>
+    </section>
+    <section class="subjects">
+        <h2>Subjects Offered</h2>
+        <ul>
+            <li>Introduction to Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management Systems</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+            <li>Software Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+        </ul>
+    </section>
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <p><strong>Email: </strong>info@collegedepartment.edu</p>
+        <p><strong>Phone: </strong>+1 (123) 456-7890</p>
+        <p><strong>Address: </strong>123 College Avenue, City, State, ZIP</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 College Departments. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'js/script4.js' %}"></script>
+</body>
+</html>

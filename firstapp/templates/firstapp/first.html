@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+    <head>
+        <title>Student Profile card</title>
+        <link rel="stylesheet" href="{%static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class="profile-card">
+            <img src="{%static 'images/images.jpeg' %}" alt="Student Photo" class="Student-photo">
+            <h2>Arvika Patil</h2>
+            <p><strong>Course:</strong>Bsc Cs</p>
+            <p><strong>Rollno:</strong>25</p>
+            <button onclick="showDetails()" id="detailsButton">ShowDetails</button>
+            <div id="additionalDetails" class="details">
+                <p><strong>Email:</strong>arvika@gmail.com</p>
+                <p><strong>City:</strong>Pune</p>
+                <p><strong>Semester:</strong>4th Semester</p>   
+            </div>     
+        <div>    
+    </body>
+    <script src="{% static 'js/script.js' %}"></script>
+</html>    

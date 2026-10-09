@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery grid</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css'%}">
+</head>
+<body>
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <img src="{% static 'images/images1.jpeg'%}" alt="Image 1" onclick="showImageName('Image 1')">
+        <img src="{% static 'images/images2.jpeg'%}" alt="Image 2" onclick="showImageName('Image 2')">
+        <img src="{% static 'images/images3.jpeg'%}" alt="Image 3" onclick="showImageName('Image 3')">
+        <img src="{% static 'images/images4.jpeg'%}" alt="Image 4" onclick="showImageName('Image 4')">
+        <img src="{% static 'images/images5.jpeg'%}" alt="Image 5" onclick="showImageName('Image 5')">
+        <img src="{% static 'images/images6.jpeg'%}" alt="Image 6" onclick="showImageName('Image 6')">
+    </div>
+    <script src="{% static 'js/script1.js' %}"></script>
+</body>
+</html>

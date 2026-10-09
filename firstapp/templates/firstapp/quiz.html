@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Simple Quiz</h1>
+        <h2>Which language is used for web development?</h2>
+        <div class="options">
+            <label>
+                <input type="radio" name="answer" value="Python"> Python
+            </label>
+            <label>
+                <input type="radio" name="answer" value="JavaScript"> JavaScript
+            </label>
+            <label>
+                <input type="radio" name="answer" value="C++"> C++
+            </label>
+            <label>
+                <input type="radio" name="answer" value="Java"> Java
+            </label>
+            <label>
+                <input type="radio" name="answer" value="HTML"> HTML
+            </label>
+        </div>
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <p id="result"></p>
+    </div>
+    <script src="{% static 'js/script3.js' %}"></script>
+</body>
+</html>
